@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/miguelangel/Documents/WGU/Udacity%20Nanodegree/ML_DevOps/genre_classification/mlruns/0/1c0b51fbe1684ce0b5e7e2da31321c80/artifacts
+end_time: 1729647908547
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 1c0b51fbe1684ce0b5e7e2da31321c80
+run_uuid: 1c0b51fbe1684ce0b5e7e2da31321c80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729647621566
+status: 3
+tags: []
+user_id: miguelangel

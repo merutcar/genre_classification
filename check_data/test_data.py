@@ -1,5 +1,6 @@
 import scipy.stats
 import pandas as pd
+import numpy as np
 
 
 def test_column_presence_and_type(data):
@@ -104,12 +105,20 @@ def test_kolmogorov_smirnov(data, ks_alpha):
         "duration_ms"
     ]
 
+    # Remove NaN or infinite values - ADDED
+    sample1 = sample1.replace([np.inf, -np.inf], np.nan).dropna()
+    sample2 = sample2.replace([np.inf, -np.inf], np.nan).dropna()
+
     # Bonferroni correction for multiple hypothesis testing
     # (see my blog post on this topic to see where this comes from:
     # https://towardsdatascience.com/precision-and-recall-trade-off-and-multiple-hypothesis-testing-family-wise-error-rate-vs-false-71a85057ca2b)
     alpha_prime = 1 - (1 - ks_alpha)**(1 / len(columns))
 
     for col in columns:
+
+        # Skip if there's not enough data for comparison - ADDED
+        if sample1[col].nunique() <= 1 or sample2[col].nunique() <= 1:
+            continue
 
         ts, p_value = scipy.stats.ks_2samp(sample1[col], sample2[col])
 

@@ -1,0 +1,54 @@
+{
+    "os": "macOS-12.7.5-x86_64-i386-64bit",
+    "python": "3.10.15",
+    "heartbeatAt": "2024-10-23T03:12:01.632661",
+    "startedAt": "2024-10-23T03:12:00.940845",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "raw_data.parquet:latest",
+        "--artifact_name",
+        "preprocessed_data.csv",
+        "--artifact_type",
+        "preprocessed_data",
+        "--artifact_description",
+        "Data with preprocessing applied"
+    ],
+    "state": "running",
+    "program": "/Users/miguelangel/Documents/WGU/Udacity Nanodegree/ML_DevOps/genre_classification/preprocess/run.py",
+    "codePathLocal": "run.py",
+    "codePath": "preprocess/run.py",
+    "git": {
+        "remote": "https://github.com/merutcar/genre_classification.git",
+        "commit": "2b42292d3264aada45dd54dcd25ef2f5e2656fa8"
+    },
+    "email": "merut@wgu.edu",
+    "root": "/Users/miguelangel/Documents/WGU/Udacity Nanodegree/ML_DevOps/genre_classification",
+    "host": "MacBook-Air-Miguel.local",
+    "username": "miguelangel",
+    "executable": "/Users/miguelangel/miniconda3/envs/mlflow-b662b891138f514f86ea83df6f384dc4f23b43c1/bin/python",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 1800,
+        "min": 1800,
+        "max": 1800
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1800,
+            "min": 1800,
+            "max": 1800
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 112.80464935302734,
+            "used": 20.076725006103516
+        }
+    },
+    "memory": {
+        "total": 8.0
+    }
+}

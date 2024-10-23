@@ -7,6 +7,10 @@ dependencies:
   - pip=20.3.3
   - mlflow=1.14.1
   - hydra-core=1.0.6
+  - protobuf=3.20.3  # Adding the compatible version of protobuf
+  - numpy=1.22.4  # Add this to use an older, compatible version of NumPy
+  - scikit-learn=1.4.1
   - pip:
       - wandb==0.10.21
       - hydra-joblib-launcher==1.1.2
+      - databricks-cli==0.17.7

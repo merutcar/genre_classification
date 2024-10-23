@@ -1,0 +1,58 @@
+{
+    "os": "macOS-12.7.5-x86_64-i386-64bit",
+    "python": "3.10.15",
+    "heartbeatAt": "2024-10-23T02:40:35.929525",
+    "startedAt": "2024-10-23T02:40:35.418842",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--train_data",
+        "data_train.csv:latest",
+        "--model_config",
+        "/Users/miguelangel/Documents/WGU/Udacity Nanodegree/ML_DevOps/genre_classification/outputs/2024-10-22/21-38-25/random_forest_config.yml",
+        "--export_artifact",
+        "model_export",
+        "--random_seed",
+        "42",
+        "--val_size",
+        "0.3",
+        "--stratify",
+        "genre"
+    ],
+    "state": "running",
+    "program": "/Users/miguelangel/Documents/WGU/Udacity Nanodegree/ML_DevOps/genre_classification/random_forest/run.py",
+    "codePathLocal": "run.py",
+    "codePath": "random_forest/run.py",
+    "git": {
+        "remote": "https://github.com/merutcar/genre_classification.git",
+        "commit": "2b42292d3264aada45dd54dcd25ef2f5e2656fa8"
+    },
+    "email": "merut@wgu.edu",
+    "root": "/Users/miguelangel/Documents/WGU/Udacity Nanodegree/ML_DevOps/genre_classification",
+    "host": "MacBook-Air-Miguel.local",
+    "username": "miguelangel",
+    "executable": "/Users/miguelangel/miniconda3/envs/mlflow-e683e93a8387c0d1eddeca68aec47ef58205e6af/bin/python",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 1800,
+        "min": 1800,
+        "max": 1800
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1800,
+            "min": 1800,
+            "max": 1800
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 112.80464935302734,
+            "used": 20.076725006103516
+        }
+    },
+    "memory": {
+        "total": 8.0
+    }
+}
